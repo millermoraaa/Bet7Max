@@ -1,0 +1,189 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #ffcc00;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.slogan {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Hero Section */
+.hero {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #222, #1a1a1a);
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #ffcc00;
+}
+
+.plataformas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.plataforma-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #ffcc00;
+}
+
+.plataforma-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 204, 0, 0.3);
+}
+
+.plataforma-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.plataforma-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.plataforma-card p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #cc0000;
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 4px solid #ffcc00;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+/* Form Section */
+.form-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #222, #1a1a1a);
+    min-height: 100vh; /* Garante que o formulário ocupe a tela toda */
+    display: flex;
+    align-items: center;
+}
+
+.form-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #ffcc00;
+}
+
+.form {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid #ffcc00;
+    width: 100%; /* Ocupa a largura máxima disponível */
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+.form .btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.form .btn:hover {
+    background-color: #cc0000;
+}
