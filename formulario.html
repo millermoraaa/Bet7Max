@@ -18,7 +18,8 @@
     <section class="form-section">
         <div class="container">
             <h2>Formulário de Cadastro</h2>
-            <form action="https://formsubmit.co/miriammaututa@gmail.com" method="POST" class="form">
+            <form name="cadastro" method="POST" data-netlify="true" class="form">
+                <input type="hidden" name="form-name" value="cadastro">
                 <div class="form-group">
                     <label for="nome">Nome Completo:</label>
                     <input type="text" id="nome" name="nome" required>
